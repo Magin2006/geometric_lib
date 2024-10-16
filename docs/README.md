@@ -6,6 +6,14 @@
 4. Enter figure sizes. Radius for circle, one side for square.
 5. Get the answer!
 
+# Описание функций
+
+## calc(fig, func, size)
+- Вычисляет и выводит результат заданной функции (area или perimeter) для указанной фигуры (circle или square).
+- Пример вызова: calc('circle', 'area', [5]) — вычислит площадь круга с радиусом 5.
+
+
+
 # Math formulas
 ## Area
 - Circle: `S = πR²`
@@ -18,4 +26,14 @@
 - Rectangle: `P = 2a + 2b`
 - Square: `P = 4a`
 - Triangle: `P = a + b + c`
+
+# История коммитов
+-b5b0fae: Update docs for calculate.py
+-d76db2a: Add calculate.py
+-51c40eb: Doc updated for triangle
+-d080c78: Triangle added
+-d078c8d: Docs added
+-8ba9aeb: Circle and square added
+
+
 
