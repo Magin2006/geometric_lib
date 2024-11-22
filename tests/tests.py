@@ -1,6 +1,8 @@
 from calculate import calc
 import pytest
 from math import pi as pi
+import sys
+sys.path.append('../geometric_lib')
 
 @pytest.mark.parametrize('size, expected, is_correct', [
         ({2}, 4, True),
