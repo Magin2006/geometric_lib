@@ -17,11 +17,17 @@ sizes = {
 }
 
 def calc(fig, func, size):
-	assert fig in figs
-	assert func in funcs
+	if any(isinstance(s, str) for s in size):
+		return
+	
+	elif all(int(s) > 0 for s in size):
+		assert fig in figs
+		assert func in funcs
 
-	result = eval(f'{fig}.{func}(*{size})')
-	return result
+		result = eval(f'{fig}.{func}(*{size})')
+		return result
+	else:
+		print("Sizes must be > 0")
 
 if __name__ == "__main__":
 	func = ''
